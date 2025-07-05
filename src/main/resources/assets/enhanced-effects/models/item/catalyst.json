@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "enhanced-effects:item/catalyst_5"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "damage": 0.2
+      },
+      "model": "enhanced-effects:item/catalyst_4"
+    },
+    {
+      "predicate": {
+        "damage": 0.4
+      },
+      "model": "enhanced-effects:item/catalyst_3"
+    },
+    {
+      "predicate": {
+        "damage": 0.6
+      },
+      "model": "enhanced-effects:item/catalyst_2"
+    },
+    {
+      "predicate": {
+        "damage": 0.8
+      },
+      "model": "enhanced-effects:item/catalyst_1"
+    }
+  ]
+}
