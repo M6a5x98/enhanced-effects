@@ -3,15 +3,14 @@
 	"id": "enhanced-effects",
 	"version": "${version}",
 	"name": "Enhanced Effects",
-	"description": "This mod aim to enhance the uses of potions and tipped arrows",
+	"description": "This mod aims to enhance the uses of potions and tipped arrows",
 	"authors": [
 		"M6a5x98"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/M6a5x98/enhanced-effects"
 	},
-	"license": "CC0-1.0",
+	"license": "GPLv3",
 	"icon": "assets/enhanced-effects/icon.png",
 	"environment": "*",
 	"entrypoints": {
