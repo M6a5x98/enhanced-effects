@@ -19,6 +19,7 @@ import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
+import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.random.Random;
@@ -116,6 +117,7 @@ public class PotionMergeRecipe extends SpecialCraftingRecipe {
         potions.add(potion1Compound);
         potions.add(potion2Compound);
         result.getOrCreateNbt().put("MergeFrom", potions);
+        result.getNbt().putInt("CustomPotionColor", (PotionUtil.getColor(potion1) + PotionUtil.getColor(potion2)) / 2);
 
         return result;
     }

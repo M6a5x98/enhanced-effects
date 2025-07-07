@@ -17,6 +17,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -101,6 +102,7 @@ public class ExtractRecipe extends SpecialCraftingRecipe  {
                 foodName
         ).setStyle(Style.EMPTY.withItalic(false)));
         result.getOrCreateNbt().put("ExtractedFrom", NbtString.of(foodStack.getItem().getTranslationKey()));
+        result.getNbt().putInt("CustomPotionColor", Random.create().nextInt());
         return result;
     }
 

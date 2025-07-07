@@ -56,6 +56,7 @@ public class TippedArrowAllPotionsRecipe extends SpecialCraftingRecipe {
             ItemStack itemStack2 = new ItemStack(Items.TIPPED_ARROW, 8);
             PotionUtil.setPotion(itemStack2, PotionUtil.getPotion(itemStack));
             PotionUtil.setCustomPotionEffects(itemStack2, PotionUtil.getCustomPotionEffects(itemStack));
+            itemStack2.getNbt().putInt("CustomPotionColor", PotionUtil.getColor(itemStack));
             return itemStack2;
         }
     }
