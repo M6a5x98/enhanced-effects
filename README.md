@@ -10,3 +10,7 @@ You can now take any potions you want as well as an **Effect Catalyst** and a gl
 You can now extract effects from foods by putting them with a glass bottle in the crafting grid. This will give you a custom potion containing the effects of the food. You can get the splash and the lingering variants by adding a gunpowder or dragon breath to the crafting grid
 #### Tipped Arrows
 You can now craft tipped arrows from splash potions and regular potions
+
+
+## Contributing
+You can contribute by translating the mod in your language and make a pull request
