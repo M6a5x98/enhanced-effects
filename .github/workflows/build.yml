@@ -50,17 +50,17 @@ jobs:
           loaders: fabric
           game_versions: "1.20.1"
           version_number: ${{ env.MOD_VERSION }}
-          files: ./build/libs/*.jar
+          files: "./build/libs/enhanced-effects-${{ env.MOD_VERSION }}-1.20.1.jar,./build/libs/enhanced-effects-${{ env.MOD_VERSION }}-1.20.1-sources.jar"
           changelog: |
             Automated build release for version ${{ env.MOD_VERSION }} triggered manually on commit ${{ github.sha }}
             Full changelog: https://github.com/M6a5x98/enhanced-effects/compare/${{ env.PREV_COMMIT }}...${{ github.sha }}
 
-      - name: Create GitHub Release with gh-release
-        uses: softprops/action-gh-release@v1
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag: "v${{ env.MOD_VERSION }}"
+          artifacts: "release.tar.gz,foo/*.txt"
           name: "Release ${{ env.MOD_VERSION }}"
           body: |
             Automated GitHub release for version ${{ env.MOD_VERSION }} triggered manually on commit ${{ github.sha }}.
