@@ -50,7 +50,7 @@ jobs:
           loaders: fabric
           game_versions: "1.20.1"
           version_number: ${{ env.MOD_VERSION }}
-          files: "./build/libs/enhanced-effects-${{ env.MOD_VERSION }}-1.20.1.jar,./build/libs/enhanced-effects-${{ env.MOD_VERSION }}-1.20.1-sources.jar"
+          files: "./build/libs/enhanced-effects-${{ env.MOD_VERSION }}-1.20.1.jar"
           changelog: |
             Automated build release for version ${{ env.MOD_VERSION }} triggered manually on commit ${{ github.sha }}
             Full changelog: https://github.com/M6a5x98/enhanced-effects/compare/${{ env.PREV_COMMIT }}...${{ github.sha }}
