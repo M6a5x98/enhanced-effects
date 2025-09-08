@@ -41,7 +41,7 @@ jobs:
           echo "PREV_COMMIT=${PREV_COMMIT}" >> $GITHUB_ENV
 
       - name: Release to Modrinth
-        if: ${{ secrets.MODRINTH_API_KEY && secrets.MODRINTH_PROJECT_ID }}
+        if: ${{ secrets.MODRINTH_API_KEY }} && ${{ secrets.MODRINTH_PROJECT_ID }}
         uses: dsx137/modrinth-releaser@main
         env:
           MODRINTH_TOKEN: ${{ secrets.MODRINTH_API_KEY }}
