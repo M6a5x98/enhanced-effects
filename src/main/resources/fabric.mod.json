@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "enhanced_effects",
+	"version": "${version}",
+	"name": "Enhanced Effects",
+	"description": "This mod aims to enhance the uses of potions and tipped arrows",
+	"authors": [
+		"M6a5x98"
+	],
+	"contact": {
+		"sources": "https://github.com/M6a5x98/enhanced-effects"
+	},
+	"license": "GPLv3",
+	"icon": "assets/enhanced_effects/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"m6a5x98.enhancedeffects.EnhancedEffects"
+		],
+		"client": [
+			"m6a5x98.enhancedeffects.client.EnhancedEffectsClient"
+		],
+		"fabric-datagen": [
+			"m6a5x98.enhancedeffects.EnhancedEffectsDataGenerator"
+		]
+	},
+	"mixins": [
+		"enhanced-effects.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
