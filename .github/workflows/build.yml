@@ -48,7 +48,7 @@ jobs:
           name: "Enhanced Effects"
           project_id: ${{ secrets.MODRINTH_PROJECT_ID }}
           loaders: fabric
-          game_versions: "1.21.5"
+          game_versions: "1.21.5:1.21.8"
           version_number: ${{ env.MOD_VERSION }}
           files: ./build/libs/enhanced-effects-*-1.21.5.jar
           changelog: |
