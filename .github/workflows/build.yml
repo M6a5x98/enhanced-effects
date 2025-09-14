@@ -52,7 +52,7 @@ jobs:
           loaders: neoforge
           game_versions: "1.21.1"
           version_number: ${{ env.MOD_VERSION }}
-          files: ./build/libs/enhanced-effects-*-1.21.1.jar
+          files: ./build/libs/enhanced_effects-*-1.21.1.jar
           changelog: |
             Automated build release for version ${{ env.MOD_VERSION }} triggered manually on commit ${{ github.sha }}
 
