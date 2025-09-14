@@ -31,7 +31,9 @@ jobs:
           echo "MOD_VERSION=${MOD_VERSION}" >> $GITHUB_ENV
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: |
+          ./gradlew runDatagen
+          ./gradlew build
 
       - name: Get Previous Commit
         id: prev_commit
