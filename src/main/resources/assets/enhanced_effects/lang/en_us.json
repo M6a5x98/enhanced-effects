@@ -1,0 +1,14 @@
+{
+  "item.enhanced_effects.catalyst": "Effect Catalyst",
+  "item.enhanced_effects.extract": "Extract of %s",
+  "item.enhanced_effects.splash_extract": "Splash Extract of %s",
+  "item.enhanced_effects.lingering_extract": "Lingering Extract of %s",
+  "item.enhanced_effects.potion-fusion": "Potion Fusion",
+  "item.enhanced_effects.custom-tipped-arrow": "Custom Tipped Arrow",
+  "tooltip.potion-fusion.potionOf": "Potion of %s",
+  "_comment": "config",
+  "enhanced_effects.configuration.title": "Enhanced Effects Configs",
+  "enhanced_effects.configuration.section.enhanced_effects.common.toml": "Enhanced Effects Configs",
+  "enhanced_effects.configuration.section.enhanced_effects.common.toml.title": "Enhanced Effects Configs",
+  "enhanced_effects.configuration.maxEffectsInPotionFusion": "Max. amount of effects in a Potion Fusion"
+}
