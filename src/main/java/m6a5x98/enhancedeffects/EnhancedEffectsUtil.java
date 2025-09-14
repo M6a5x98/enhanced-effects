@@ -9,9 +9,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
 import net.minecraft.item.consume.ConsumeEffect;
-import net.minecraft.potion.Potions;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Colors;
 
 import java.util.ArrayList;
@@ -54,6 +51,7 @@ public class EnhancedEffectsUtil {
         List<MergeFromComponent.MergeFrom> mergeFromComponent = stack.copy().get(ModComponents.MERGE_FROM_COMPONENT);
         return mergeFromComponent == null || mergeFromComponent.isEmpty();
     }
+
     public static int getPotionColor(ItemStack stack) {
         Optional<?> Component = getComponent(stack, DataComponentTypes.POTION_CONTENTS);
         if (Component.isPresent()) {

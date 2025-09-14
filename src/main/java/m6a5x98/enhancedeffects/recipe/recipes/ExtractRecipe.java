@@ -1,7 +1,6 @@
 package m6a5x98.enhancedeffects.recipe.recipes;
 
 import com.mojang.serialization.MapCodec;
-import m6a5x98.enhancedeffects.EnhancedEffects;
 import m6a5x98.enhancedeffects.EnhancedEffectsUtil;
 import m6a5x98.enhancedeffects.components.ModComponents;
 import m6a5x98.enhancedeffects.recipe.ModRecipes;
@@ -23,7 +22,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -82,13 +80,15 @@ public class ExtractRecipe extends SpecialCraftingRecipe  {
             }
         }
         List<StatusEffectInstance> foodEffects = EnhancedEffectsUtil.getPotionEffects(foodStack);
-        if (foodStack.isOf(Items.SUSPICIOUS_STEW)) {
-            foodEffects.addAll(EnhancedEffectsUtil.getSusStewEffects(foodStack));
-        }
-        EnhancedEffects.LOGGER.info("FoodEffects: {}", foodEffects);
         Text foodName = Text.translatable(foodStack.getItem().getTranslationKey());
         result.set(DataComponentTypes.CUSTOM_NAME, Text.translatable(
-                "item.enhanced_effects.extract",
+                "item.enhanced_effects." + (
+                    result.isOf(Items.SPLASH_POTION) 
+                    ? "splash_"
+                    : result.isOf(Items.LINGERING_POTION)
+                    ? "lingering_"
+                    : ""
+                ) + "extract",
                 foodName
         ).setStyle(Style.EMPTY.withItalic(false)));
         result.set(ModComponents.EXTRACTED_FROM_COMPONENT, foodStack.getItem().getTranslationKey());

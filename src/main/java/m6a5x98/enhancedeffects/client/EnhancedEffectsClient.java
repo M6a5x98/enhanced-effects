@@ -8,8 +8,6 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtElement;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
@@ -41,6 +39,7 @@ public class EnhancedEffectsClient implements ClientModInitializer {
                             }
                         });
             }
+            
             if (stack.get(ModComponents.GIVEN_EFFECTS_COMPONENT) != null &&
                     !stack.get(ModComponents.GIVEN_EFFECTS_COMPONENT).isEmpty() &&
                     EnhancedEffectsUtil.isFood(stack) &&

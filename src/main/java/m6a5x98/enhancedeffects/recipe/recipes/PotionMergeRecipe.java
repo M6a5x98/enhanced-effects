@@ -3,11 +3,9 @@ package m6a5x98.enhancedeffects.recipe.recipes;
 import com.mojang.serialization.MapCodec;
 import m6a5x98.enhancedeffects.EnhancedEffectsUtil;
 import m6a5x98.enhancedeffects.components.ModComponents;
-import m6a5x98.enhancedeffects.components.components.ExtractedFromComponent;
 import m6a5x98.enhancedeffects.components.components.MergeFromComponent;
 import m6a5x98.enhancedeffects.item.ModItems;
 import m6a5x98.enhancedeffects.recipe.ModRecipes;
-import net.minecraft.component.ComponentChanges;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.PotionContentsComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -21,12 +19,10 @@ import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.CraftingRecipeCategory;
 import net.minecraft.recipe.input.CraftingRecipeInput;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
@@ -79,9 +75,9 @@ public class PotionMergeRecipe extends SpecialCraftingRecipe {
                 } else if (potion2.isEmpty()) {
                     potion2 = stack;
                 }
-            } else if (stack.getItem() == Items.GLASS_BOTTLE) {
+            } else if (stack.isOf(Items.GLASS_BOTTLE)) {
                 hasGlassBottle = true;
-            } else if (stack.getItem() == ModItems.CATALYST) {
+            } else if (stack.isOf(ModItems.CATALYST)) {
                 hasCatalyst = true;
             }
         }

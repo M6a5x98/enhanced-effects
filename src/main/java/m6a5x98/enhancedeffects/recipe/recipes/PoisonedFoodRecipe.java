@@ -1,7 +1,6 @@
 package m6a5x98.enhancedeffects.recipe.recipes;
 
 import com.mojang.serialization.MapCodec;
-import m6a5x98.enhancedeffects.EnhancedEffects;
 import m6a5x98.enhancedeffects.EnhancedEffectsUtil;
 import m6a5x98.enhancedeffects.components.ModComponents;
 import m6a5x98.enhancedeffects.components.components.GivenEffectsComponent;

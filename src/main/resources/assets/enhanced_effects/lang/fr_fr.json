@@ -2,6 +2,8 @@
   "item.enhanced_effects.catalyst": "Catalyseur",
   "itemgroup.catalyst": "Enhanced Effects",
   "item.enhanced_effects.extract": "Extrait de %s",
+  "item.enhanced_effects.splash_extract": "Extrait Jetable de %s",
+  "item.enhanced_effects.lingering_extract": "Extrait Persistant de %s",
   "item.enhanced_effects.potion-fusion": "Fusion de Potions",
   "item.enhanced_effects.custom-tipped-arrow": "Flèche à effets personalisée",
   "tooltip.potion-fusion.potionOf": "Potion de %s"

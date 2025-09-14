@@ -1,6 +1,5 @@
 package m6a5x98.enhancedeffects.components;
 
-import m6a5x98.enhancedeffects.components.components.ExtractedFromComponent;
 import m6a5x98.enhancedeffects.components.components.GivenEffectsComponent;
 import m6a5x98.enhancedeffects.components.components.MergeFromComponent;
 import net.minecraft.component.ComponentType;

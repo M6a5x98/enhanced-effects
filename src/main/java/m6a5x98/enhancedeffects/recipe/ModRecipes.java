@@ -6,7 +6,6 @@ import m6a5x98.enhancedeffects.recipe.recipes.PoisonedFoodRecipe;
 import m6a5x98.enhancedeffects.recipe.recipes.PotionMergeRecipe;
 import m6a5x98.enhancedeffects.recipe.recipes.TippedArrowAllPotionsRecipe;
 import net.minecraft.recipe.RecipeSerializer;
-import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -27,12 +26,14 @@ public class ModRecipes {
                     new ExtractRecipe.Serializer()
             );
 
+
     public static final RecipeSerializer<PotionMergeRecipe> POTION_MERGE_SERIALIZER =
             Registry.register(
                     Registries.RECIPE_SERIALIZER,
                     Identifier.of(EnhancedEffects.MOD_ID, "crafting_potion_merge"),
                     new PotionMergeRecipe.Serializer()
             );
+
 
     public static final RecipeSerializer<TippedArrowAllPotionsRecipe> TIPPED_ARROW_SERIALIZER =
             Registry.register(
@@ -43,5 +44,5 @@ public class ModRecipes {
 
 
 
-    public static void init() { }
+    public static void init() {}
 }
