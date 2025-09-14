@@ -32,7 +32,7 @@ jobs:
 
       - name: Build with Gradle
         run: |
-          ./gradlew runDatagen
+          ./gradlew runData
           ./gradlew build
 
       - name: Get Previous Commit
